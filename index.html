@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zbyszek dla Kodilla -  zadanie nr 5.1,2,3</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Custome CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+
+<body>
+	
+	<header class="header-wrapper">
+
+		<!-- HEADER TOP -->
+		
+		<div class="header-top container">
+			<div class="row">
+				
+				<!-- Logo column -->
+				<div class="header-top-logo col-md-2 col-xs-12 hidden-sm hidden-xs">
+					<h1>
+						<a href="#">
+							<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=24&txt=MyLogo&w=150&h=50" alt="">
+						</a>
+					</h1>
+				</div>
+				
+				<div class="col-md-10">
+					<div class="row">
+
+						<!-- Callcenter column -->
+						<div class="header-top-callcenter col-md-8 col-xs-12 text-center">
+							<div>
+								<i class="fa fa-mobile fa-pull-left fa-4x" aria-hidden="true"></i>			
+								<a href="callto:801802803">801 802 803</a><br>
+								<p>Mon - Fri: 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<!-- Search column -->
+						<div class="search col-md-8 col-xs-12 text-center">
+							<div class="input-group">
+								<input type="text" class="form-control input-lg" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-lg" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div>
+						</div>
+				
+						<!-- Cart column -->
+						<div class="header-top-cart col-md-4 col-xs-12">
+
+							<div class="dropdown">
+
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="fa fa-shopping-cart"></i>
+									Cart (3 items): <i class="fa fa-dollar"></i>69.78 <span class="caret"></span>
+								</a>
+
+								<div class="cart-dropdown-inner dropdown-menu dropdown-menu-right table-responsive">
+									<table class="cart-table table table-hover">
+										<thead>
+									    	<tr>
+									    		<th>Item</th>
+												<th>Qty</th>
+												<th>Price</th>
+												<th></th>
+									    	</tr>
+									    </thead>
+									    
+									    <tbody>
+										    <tr>
+											    <td>Baden Futsal Match Ball</td>
+											    <td>1</td>
+											    <td>$25.59</td>
+											    <td>x</td>
+										    </tr>
+										    <tr>
+											    <td>Baden Futsal Training Ball</td>
+											    <td>1</td>
+											    <td>$17.59</td>
+											    <td>x</td>
+										    </tr>
+										    <tr>
+											    <td>Double Action Ball Pump</td>
+											    <td>2</td>
+											    <td>$7.99</td>
+											    <td>x</td>
+										    </tr>
+									    </tbody>
+
+									    <tfoot>
+										    <tr>
+										    	<td class="text-right" colspan="2">
+										    		<p>Net Total</p>
+										    		<p>VAT</p>
+										    		<p><strong>Total Incl. VAT</strong></p>
+										    	</td>
+										    	<td>
+										    		<p>$49.79</p>
+											    	<p>$17.21</p>
+											    	<p><strong>$69.79</strong></p>
+										    	</td>
+										    	<td>
+										    	</td>
+										    </tr>
+									    </tfoot>
+
+									</table>
+
+									<div class="text-right">
+										<button type="button" class="btn btn-default">View Cart</button>
+										<button type="button" class="btn btn-danger">Checkout</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+		<!-- MAIN NAVIGATION -->
+
+		<nav id="main-navigation" class="navbar navbar-inverse">
+			<div class="container">
+				
+				<!-- Logo and hamburger -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand visible-sm visible-xs" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=MyLogo&w=150&h=50" alt=""></a>
+				</div>
+				
+				<!-- Navigation bar -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<!-- Navigation main links -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Soccer</a></li>
+								<li><a href="#">Volleyball</a></li>
+								<li><a href="#">Football</a></li>
+								<li class="divider"></li>
+								<li><a href="#">On sale</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+					</ul>
+					
+					<!-- Navigation register and login links on the right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+						<li><a href="#" data-toggle="modal" data-target=".login-modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- LOGIN MODAL -->
+		<div id="login-modal" class="login-modal modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Login</h4>
+					</div>
+					<div class="modal-body">
+						
+						<!-- Login form -->
+						<form>
+							<div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control" id="pwd">
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox"> Remember me</label>
+							</div>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-success" data-dismiss="modal">Login</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="#" data-dismiss="modal">Forgot my password</a>
+						<a href="#" data-dismiss="modal">Register new account</a>
+					</div>
+				</div>
+
+			</div>
+		</div>						
+
+		<!-- CAROUSEL -->
+
+		<div id="main-carousel" class="carousel slide" data-ride="carousel">
+		  	<!-- Indicators -->
+		  	<ol class="carousel-indicators">
+		    	<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+		    	<li data-target="#main-carousel" data-slide-to="1"></li>
+		    	<!-- <li data-target="#main-carousel" data-slide-to="2"></li> -->
+		  	</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="https://static.pexels.com/photos/39562/the-ball-stadion-football-the-pitch-39562.jpeg" alt="...">
+					<div class="carousel-caption">
+			        	<h2>Best football equipment</h2>
+			      	</div>
+			    </div>
+			    <div class="item">
+			    	<img src="https://static.pexels.com/photos/4198/field-sport-ball-america.jpg" alt="...">
+			    	<div class="carousel-caption">
+			        	<h2>Finest rugby equipment</h2>
+			     	</div>
+				</div>
+  			</div>
+
+  			<!-- Controls -->
+			<a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+	</header>
+
+	<main class="container">
+		
+		<!----------- PRODUCTS GALLERY ---------->
+		<section class="row product-list">
+			<div class="col-12">
+				<h2>Catalog picks</h2>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<!-- <div class="image"> -->
+						<img src="https://placehold.it/242x200" alt="">
+						<span class="label-new">new</span>
+						<span class="label-discount">-25%</span>
+					<!-- </div> -->
+					<div class="caption">
+						<div class="rate">
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star-half-o fa-lg"></i>
+							<i class="fa fa-star-o fa-lg"></i>
+						</div>
+						<h3>Baden Futsal Match Ball</h3>
+						<div class="price">
+							<p class="price-discounted"><i class="fa fa-dollar">180.00</i></p>
+							<p class="price-catalog"><i class="fa fa-dollar">200.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<img src="https://placehold.it/242x200" alt="">
+					<div class="caption">
+						<div class="rate">
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star-half-o fa-lg"></i>
+							<i class="fa fa-star-o fa-lg"></i>
+						</div>
+						<h3>Baden Futsal Training Ball</h3>
+						<div class="price">
+							<p class="price-regular"><i class="fa fa-dollar">170.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<img src="https://placehold.it/242x200" alt="">
+					<div class="caption">
+						<div class="rate">
+						</div>
+						<h3>Double Action Ball Pump</h3>
+						<div class="price">
+							<p class="price-regular"><i class="fa fa-dollar">170.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<!-- <div class="image"> -->
+						<img src="https://placehold.it/242x200" alt="">
+						<span class="label-new">new</span>
+						<span class="label-discount">-25%</span>
+					<!-- </div> -->
+					<div class="caption">
+						<div class="rate">
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star-half-o fa-lg"></i>
+							<i class="fa fa-star-o fa-lg"></i>
+						</div>
+						<h3>Baden Futsal Match Ball</h3>
+						<div class="price">
+							<p class="price-discounted"><i class="fa fa-dollar">180.00</i></p>
+							<p class="price-catalog"><i class="fa fa-dollar">200.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<img src="https://placehold.it/242x200" alt="">
+					<div class="caption">
+						<div class="rate">
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star fa-lg"></i>
+							<i class="fa fa-star-half-o fa-lg"></i>
+							<i class="fa fa-star-o fa-lg"></i>
+						</div>
+						<h3>Baden Futsal Training Ball</h3>
+						<div class="price">
+							<p class="price-regular"><i class="fa fa-dollar">170.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 product">
+				<div class="thumbnail">
+					<img src="https://placehold.it/242x200" alt="">
+					<div class="caption">
+						<div class="rate">
+						</div>
+						<h3>Double Action Ball Pump</h3>
+						<div class="price">
+							<p class="price-regular"><i class="fa fa-dollar">170.00</i></p>
+						</div>
+						<p class="text-right">
+							<a href="#" class="btn btn-default" role="button">Details</a>
+							<a href="#" class="btn btn-danger" role="button"><i class="fa fa-cart-plus"></i> Add To Cart</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- NEWSLETTER SUBSCRIPTION FORM -->
+		<section class="row">
+				
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="container inverse">
+			<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<h3>About us</h3>
+					<p></p>
+				</div>	
+				<div class="col-xs-12 col-md-4">
+					<h3>Product categories</h3>
+					<p></p>
+				</div>	
+				<div class="col-xs-12 col-md-4">
+					<h3>Contact us</h3>
+				</div>	
+			</div>
+
+			<div class="row footer-bottom">
+				<div class="copyrights">
+					<p><i class="fa fa-copyrights"></i> 2016 Zbigniew Osiński</p>
+				</div>
+				<div class="payment-methods text-right">
+					<p>
+						<i class="fa fa-cc-visa"> </i>
+						<i class="fa fa-cc-mastercard"> </i>
+						<i class="fa fa-paypal"> </i>
+						<i class="fa fa-bank"> </i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
