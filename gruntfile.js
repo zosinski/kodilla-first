@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 	          		'css/*.css': 'sass/*.sass'
 	        	}
 	      	}
-	    }
+	    },
 
 	    imagemin: {
  			dynamic: {
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 		            dest: 'images/build/'
         		}]
     		}
-		}
+		},
 
 		watch: {
 			scripts: {
@@ -36,6 +36,7 @@ module.exports = function(grunt) {
 		}
 
 	});
+
   
   	// Load the plugins tasks 
   	grunt.loadNpmTasks('grunt-sass');
